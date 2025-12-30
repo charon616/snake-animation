@@ -546,15 +546,19 @@ export default function P5Animation() {
       )}
         {hudState.gameOver && (
           <div className="absolute inset-0 z-10 overflow-hidden">
-            <div className="absolute inset-0">
-              <img src="/newyear.gif" alt="New Year celebration" className="h-full w-full object-cover" />
-              <div className="absolute inset-0 " />
+            <div className="absolute inset-0 flex justify-center">
+              <img
+                src="/newyear.gif"
+                alt="New Year celebration"
+                className="h-full w-full object-cover md:max-w-[800px]"
+              />
             </div>
+            <div className="absolute inset-0 " />
             <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-6 -translate-y-18">
               <img
                 src="/newyear-title.png"
                 alt="Happy New Year"
-                className="happy-fade w-[60vw] object-contain drop-shadow-[0_8px_30px_rgba(0,0,0,0.45)]"
+                className="happy-fade w-[60vw] md:w-[calc(min(420px,50vw))] object-contain"
               />
             </div>
             <div className="relative z-20 flex h-[calc(100vh-72px)] flex-col items-center justify-end gap-6 px-6 pb-16 text-center text-black">

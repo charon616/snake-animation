@@ -5,7 +5,7 @@
 
 :root {
   font-family: 'Courier New', Courier, monospace;
-  --background: oklch(1 0 0);
+  --background: #ff7d76;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
