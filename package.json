@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev --experimental-https",
     "lint": "eslint .",
     "start": "next start"
   },
@@ -51,6 +51,7 @@
     "p5": "1.9.4",
     "react": "19.2.0",
     "react-day-picker": "9.8.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "19.2.0",
     "react-hook-form": "^7.60.0",
     "react-resizable-panels": "^2.1.7",

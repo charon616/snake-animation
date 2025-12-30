@@ -1,4 +1,12 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next"
+import "@/styles/globals.css"
+import { Fredoka } from "next/font/google"
+
+const fredoka = Fredoka({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-fredoka',
+})
 
 export const metadata: Metadata = {
   title: 'v0 App',
@@ -9,10 +17,8 @@ export const metadata: Metadata = {
       {
         url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        type: 'image/png',
+        sizes: '32x32',
       },
       {
         url: '/icon.svg',
@@ -30,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${fredoka.variable} font-sans bg-background text-foreground antialiased`}>
         {children}
       </body>
     </html>
